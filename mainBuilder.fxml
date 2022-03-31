@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="700.0" styleClass="root" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+  
+   <children>
+      <Label fx:id="tempLabel" layoutX="-2.0" layoutY="106.0" prefHeight="169.0" prefWidth="702.0" text="--" />
+      <Label fx:id="cityLabel" contentDisplay="CENTER" ellipsisString="" layoutX="14.0" layoutY="60.0" prefHeight="48.0" prefWidth="702.0" text="--" textFill="#91826d" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="myChoiceBox" layoutX="473.0" layoutY="88.0" opacity="0.7" prefHeight="36.0" prefWidth="165.0" />
+      <Label fx:id="coordLabel" contentDisplay="CENTER" layoutY="29.0" prefHeight="36.0" prefWidth="702.0" text="--">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="picView" fitHeight="292.0" fitWidth="351.0" layoutX="176.0" layoutY="304.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Desktop/rainy-bg.jpg" />
+         </image>
+      </ImageView>
+      <GridPane fx:id="infoGridPane" layoutX="138.0" layoutY="734.0" prefHeight="110.0" prefWidth="422.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="11.0" minHeight="0.0" prefHeight="0.0" />
+          <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="humidityLabel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="64.0" prefWidth="141.0" text="Humidity" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+            <Label fx:id="windspeedLabel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Wind Speed" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+            <Label fx:id="visibilityLabel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Visibility" GridPane.columnIndex="2" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+            <Label fx:id="valueHumidity" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="35.0" prefWidth="147.0" text="--" GridPane.rowIndex="1" />
+            <Label fx:id="valueWindSpeed" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="--" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="valueVisibility" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="48.0" prefWidth="90.0" text="--" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Label fx:id="timeLabel" layoutY="661.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="59.0" prefWidth="317.0" text="--" />
+      <Label fx:id="dayLabel" layoutX="4.0" layoutY="630.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="31.0" prefWidth="309.0" text="--" />
+      <Label fx:id="mainDescriptionLabel" layoutX="428.0" layoutY="632.0" prefHeight="56.0" prefWidth="273.0" text="--" />
+   </children>
+</AnchorPane>
