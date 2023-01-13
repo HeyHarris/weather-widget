@@ -51,5 +51,6 @@ public static String parseJson(String responseBody) {
 	}
 ```
 Display as shown
+
 ![long-weather-widget-2](https://user-images.githubusercontent.com/102763206/212425401-b7beaf15-2d10-4926-84e0-7b884be8ae9d.png)
 
